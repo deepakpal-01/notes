@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Notes : All your notes at one place !!!</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">    
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <nav class="headBar navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><big>Notes</big></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://deepakpal-01.github.io/text-app/#/"><big>Home</big></a>
+              </li>
+            </ul>
+            <h4>Welcome to Magic Notes</h4>  
+            <form class="d-flex">
+              <input id="searchText" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="container">  
+        <div class="intro"><p>If You Aren't Taking Notes, You Aren't Learning</p></div>
+        <div class="card title-card">
+          <div class="card-body">
+            <h3 class="card-title">Your Title</h3>
+            <textarea id="addTitle" cols="50" rows="2"></textarea>
+            <br>
+          </div>
+        </div>               
+            <div class="card">
+                <div class="card-body">
+                  <h3 class="card-title">Your Note</h3>
+                  <textarea id="addText" cols="75" rows="3"></textarea>
+                  <br>
+                  <button class="btn btn-primary" id="addBtn">Add Note</button>
+                </div>
+              </div>          
+        </div>
+        <div class="cards-container row container-fluid ">           
+        </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="notes.js"></script>
+</html>
