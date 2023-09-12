@@ -122,6 +122,6 @@ textarea{
         height: 7vh;
     }
     .container{
-        width: 100vw;
+        width: 100%;
     }
 }
